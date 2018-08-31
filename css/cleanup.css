@@ -1,1 +1,25 @@
-/* write your override styles here */
+/*we can assume that the tags are descendants of the wall ID*/
+/* Descendant selector*/
+#wall .tag-1 {
+  display: none;
+}
+
+body #wall #tag-2 {
+  display: none;
+}
+
+body div#wall #tag-3.slick{
+  display: none;
+}
+
+body #wall #tag-4 {
+  display: none;
+}
+
+body #wall div.parent div:last-child div#tag-6 {
+  display: none;
+}
+
+body #wall div.parent div > div:last-child #tag-7.slick {
+  display: none;
+}
